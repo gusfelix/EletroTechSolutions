@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+    background-image: url("../../img/backLogin.png");
+    background-size: 100%;
+}
+
+main {
+    border: 0px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 730px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------FORM LOGIN--------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+#form{
+    display: block; /*aqui*/
+    border: 0px solid #000;
+    border-radius: 4px;
+    scale: 1;
+    width: 355px;
+    height: 400px;
+    top: 20%; 
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#logo{
+    border: 0px solid #fff;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-image: url("../../img/logo_login.png");
+    background-size: 50px 50px;
+}
+
+
+label{
+    color: #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content:left;
+    margin-top: 20px;
+}
+
+.label{
+    font-weight: bold;
+    font-size: 11pt;
+    margin-left: 15%;
+    letter-spacing: 1px;
+}
+
+input{
+    width: 245px;
+    height: 30px;
+    border-radius: 4px;
+    outline: unset;
+    text-align: left;
+    border: 1px solid rgb(114, 114, 114);
+    color: #000;
+    display: block;
+    padding: 7px;
+    margin: 0 auto;
+    margin-top: 5px;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 14pt;
+}
+
+#login{
+    border: 1px solid rgb(114, 114, 114);
+}
+
+#login:focus{
+    border: 1px solid #0e73e8;
+}
+
+#senha{
+    border: 1px solid rgb(114, 114, 114);
+}
+
+#senha:focus{
+    border: 1px solid #0e73e8;
+}
+
+#resetPassword{
+    position: absolute;
+    margin-left: 175px;
+    margin-top: 5px;
+}
+
+#resetPassword > a{
+    text-decoration: none;
+}
+
+#olho{
+    width: 20px;
+    color: rgb(77, 77, 77);
+    position: absolute;
+    transform: translateY(-150%) translateX(1100%);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-top: -3px;
+}
+
+#olho:hover{
+    color: #0e73e8;
+}
+
+.btn{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 3px;
+    border: none;
+    background-color: #0e73e8;
+    margin-top: 40px;
+    padding: 8px;
+    width: 255px;
+    height: 45px;
+    transition: .6s ease;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    background-color: #054997;
+}
+
+h4, a{
+    margin-top: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    font-weight: 100;
+    color: rgb(87, 87, 87);
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------RESPONSIVIDADE--------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+

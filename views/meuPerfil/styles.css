@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.671);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.brand {
+    color: #FFF;
+    font-size: 2rem !important;
+    transition: 0.3s;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.brand:hover {
+    color: #0e73e8;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12pt;
+    float: right;
+    margin-top: 20px;
+    margin-right: 55px;
+    padding: 0.6rem 1rem;
+    border: 1px solid #FFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #FFF;
+    background-color: #0e73e8;
+    border-color: #0e73e8;
+    cursor: pointer;
+}
+
+.btn:hover {
+border-color: #0e73e8;
+color: #0e73e8;
+background-color: transparent;
+}
+
+/* BANNER */
+
+#mainBanner{
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../img/job1.jpg");
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#title{
+    margin-top: 100px;
+    text-transform: uppercase;
+    font-size: 35pt;
+    text-align: center;
+    color: #fff;
+}
+
+/*  */
+#mainLinks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 30px;
+    gap: 40px;
+}
+
+/* card links */
+
+#artLinks{
+    width: 350px;
+    height: 480px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-left: 20px;
+}
+
+#secLetrasPerfil{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(93, 95, 89);
+    color: #fff;
+    font-size: 18pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(153, 155, 152);
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 8px 24px;
+}
+
+#artLinks > h3{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#secLinksPerfil{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+#secLinksPerfil > a{
+    height: 40px;
+    text-decoration: none;
+    color: #000;
+    padding-left: 40px;
+    font-size: 15pt;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    gap: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#secLinksPerfil > a:hover{
+    background-color: rgb(54, 53, 53);
+    color: #fff;
+}
+  
+/*  */
+/* INPUTS PERFIL */
+/*  */
+#artPerfilInput{
+    display: flex; /* aqui */
+    width: 70%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+.secInput{
+    width: auto;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.secInput > label{
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.secInput > input{
+    width: 500px;
+    height: 40px;
+    border: 1px solid rgb(182, 181, 181);
+    outline: none;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 15pt;
+    border-radius: 3px;
+}
+
+.secInput > input:focus{
+    border: 1px solid #0e73e8;
+}
+
+/*  */
+/* INPUTS ENDEREÇO */
+/*  */
+#artEnderecoInput{
+    display: none; /* aqui */
+    width: 70%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/*  */
+/* INPUTS SENHA */
+/*  */
+#artSenhaInput{
+    display: none; /* aqui */
+    width: 70%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/*  */
+/* INPUTS CARTÃO */
+/*  */
+#artCartaoInput{
+    display: none; /* aqui */
+    width: 70%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+#artPlanoInput{
+    display: none; /* aqui */
+    width: 70%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* BTN */
+.btnSalvar{
+    width: 205px;
+    height: 45px;
+    font-size: 13pt;
+    margin: 0 auto;
+    
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: rgba(5, 180, 5, 0.938);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btnSalvar:hover{
+    background-color: rgba(6, 124, 6, 0.938);
+}
+
+/* REPONSIVIDADE */
+@media (max-width: 845px) {
+    .secInput > input{
+        width: 350px;
+    }
+}
+
+@media (max-width: 622px) {
+    #mainBanner{
+        display: none;
+    }
+    .secInput > input{
+        width: 290px;
+        height: 35px;
+        font-size: 11pt !important;
+    }
+    .secInput > label{
+        font-size: 12pt;
+    }
+    #artLinks{
+        width: 310px;
+        height: 430px;
+        margin-left: 0px;
+        margin-top: 120px;
+    } 
+    #secLetrasPerfil{
+        width: 70px;
+        height: 70px;
+        font-size: 15pt;
+    }
+    #secLinksPerfil{
+        width: 100%;
+        gap: 8px;
+        margin-top: 35px;
+    }
+    
+    #secLinksPerfil > a{
+        height: 35px;
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 488px) {
+    .secInput > input{
+        width: 240px;
+        height: 33px;
+        font-size: 11pt !important;
+    }
+
+}

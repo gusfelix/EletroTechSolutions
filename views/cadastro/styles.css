@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+    background-image: url("../../img/backLogin.png");
+    background-size: 100%;
+}
+
+main {
+    border: 0px solid rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------FORM LOGIN--------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+#form{
+    display: flex; /*aqui*/
+    flex-direction: column;
+    border-radius: 4px;
+    scale: 1;
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+#secCabecalho{
+    display: flex;
+}
+
+#logo{
+    border: 0px solid #fff;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #054997;
+}
+
+#iconBack{
+    border: 0px solid #fff;
+    width: 50px;
+    height: 50px;
+    background-image: url("../../img/setaBack.png");
+    background-size: 50px 50px;
+}
+
+.titleInfo{
+    color: rgb(172, 172, 172);
+    text-align: left;
+    margin-bottom: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.artContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.secInput{
+    text-align: left;
+}
+
+.label{
+    font-weight: bold;
+    font-size: 11pt;
+    letter-spacing: 1px;
+}
+
+input{
+    width: 345px;
+    height: 30px;
+    border-radius: 4px;
+    outline: unset;
+    text-align: left;
+    border: 1px solid rgb(114, 114, 114);
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding: 7px;
+    margin: 0 auto;
+    margin-top: 5px;
+    position: relative;
+    font-size: 14pt;
+    letter-spacing: 1px;
+}
+
+input:focus{
+    border: 1px solid #0e73e8;
+}
+
+.btn{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 3px;
+    border: none;
+    background-color: #0e73e8;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 8px;
+    width: 255px;
+    height: 45px;
+    transition: .6s ease;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.btn:hover{
+    background-color: #054997;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------RESPONSIVIDADE--------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 871px) {
+    .artContainer{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 460px){
+    #form{
+        padding: 5px;
+    }
+    input{
+        width: 305px;
+        height: 28px;
+        font-size: 13pt;
+    }
+    
+}
